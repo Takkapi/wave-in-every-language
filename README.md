@@ -36,6 +36,8 @@ Some might add some rules durring developemt
 | Ruby (Glimmer) | ❌ |
 | TypeScript (Node.JS Kaboom) | ❌ |
 | Zig (zig-gamedev) | ❌ |
+| Scratch | ❌ |
+| Swift | ❌ |
 
 ## Project requirements
 1. Basic player movement
