@@ -11,7 +11,7 @@ Some might add some rules durring developemt
 | Programming langauge(+window library) | Status |
 |---------------------------------------|--------|
 | Assembler (raylib (porting)) | ❌ |
-| C (OpenGL) | ❌ |
+| C (GLFW) | ❌ |
 | C++ (SDL2) | ❌ |
 | C# (MonoGame) | ❌ |
 | dlang (GtkD) | ❌ |
