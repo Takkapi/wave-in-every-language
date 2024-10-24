@@ -10,7 +10,7 @@ pyGame is ease to set up as well as python itself
 
 ## Project requirements
 1. Basic player movement ✅
-2. Enemy (Basic and Fast) spawn in movement
+2. Enemy (Basic and Fast) spawn and movement ✅
 3. Trails
 4. Collisions
 5. Particles (Optional)
