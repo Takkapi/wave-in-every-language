@@ -1,43 +1,12 @@
-# Wave in every language
+# Wave in Python
 
-Programming Wave, a game that I work on in every programming language possible
+Programming Wave, a game that I work on in python
 
-I will have a week to learn the language and up to a month to make the game.
-Every project will have a requirement for it to be completed.
-Some might add some rules durring developemt
+I have one week to work on the game and release the source code.
 
-## Languages that have a window library 
-
-| Programming langauge(+window library) | Status |
-|---------------------------------------|--------|
-| Assembler (raylib (porting)) | ❌ |
-| C (GLFW) | ❌ |
-| C++ (SDL2) | ❌ |
-| C# (MonoGame) | ❌ |
-| dlang (GtkD) | ❌ |
-| Dart (Flutter) | ❌ |
-| Elixir (Scenic) | ❌ |
-| Erlang (WxWidgets) | ❌ |
-| Euphoria (EuJAPI) | ❌ |
-| Game Maker Language (Game Maker Studio) | ❌ |
-| GDScript (Godot) | ❌ |
-| Go (raylib) | ❌ |
-| Haskell (Gtk2Hs) | ❌ |
-| HTML (js for logic)| ❌ |
-| Java (Swing) | ❌ |
-| JavaScript (Node.JS Kaboom) | ❌ |
-| Kotlin (LibGDX) | ❌ |
-| Lua (Love) | ❌ |
-| Objective-C (Cocoa) | ❌ |
-| Pascal (fpGUI) | ❌ |
-| PHP | ❌ |
-| Python (pyGame) | ❌ |
-| Rust (Bevy) | ❌ |
-| Ruby (Glimmer) | ❌ |
-| TypeScript (Node.JS Kaboom) | ❌ |
-| Zig (zig-gamedev) | ❌ |
-| Scratch | ❌ |
-| Swift | ❌ |
+## Libraries used
+For better experience, pyGame library will be used for the entire project
+pyGame is ease to set up as well as python itself
 
 ## Project requirements
 1. Basic player movement
