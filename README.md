@@ -31,7 +31,7 @@ Some might add some rules durring developemt
 | Objective-C (Cocoa) | ❌ |
 | Pascal (fpGUI) | ❌ |
 | PHP | ❌ |
-| Python (pyGame) | ❌ |
+| Python (pyGame) | 🔧 |
 | Rust (Bevy) | ❌ |
 | Ruby (Glimmer) | ❌ |
 | TypeScript (Node.JS Kaboom) | ❌ |
