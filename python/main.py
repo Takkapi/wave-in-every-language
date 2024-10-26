@@ -2,7 +2,7 @@ import pygame
 import asyncio
 
 from player import player
-from enemies import basic_enemy
+from enemies import basic_enemy, fast_enemy
 
 async def main():
     pygame.init()
@@ -13,6 +13,7 @@ async def main():
 
     player_pos = pygame.Vector2(screen.get_width() / 2, screen.get_height() / 2)
     basic_enemy_pos = pygame.Vector2(screen.get_width() / 2, screen.get_height() / 2)
+    fast_enemy_pos = pygame.Vector2(screen.get_width() / 2, screen.get_height() / 2)
 
     width = screen.get_width()
     height = screen.get_height()
@@ -26,6 +27,7 @@ async def main():
 
         await player(screen, player_pos, width, height, dt)
         await basic_enemy(screen, basic_enemy_pos, width, height, dt)
+        await fast_enemy(screen, fast_enemy_pos, width, height, dt)
 
         pygame.display.flip()
 
