@@ -9,7 +9,7 @@ For better experience, pyGame library will be used for the entire project
 pyGame is ease to set up as well as python itself
 
 ## Project requirements
-1. Basic player movement
+1. Basic player movement ✅
 2. Enemy (Basic and Fast) spawn in movement
 3. Trails
 4. Collisions
