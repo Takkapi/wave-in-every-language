@@ -2,8 +2,12 @@ import pygame
 import numpy as np
 import asyncio
 
+from player import health
+
 speedX = 550
 speedY = 550
+
+basic_enemy_power = 15
 
 async def basic_enemy(screen, basic_enemy_pos, width, height, dt):
     global speedX
@@ -45,3 +49,17 @@ async def fast_enemy(screen, pos, width, height, dt):
 
     pos.x = np.clip(pos.x, 0, width - offset)
     pos.y = np.clip(pos.y, 0, height - offset)
+
+async def basic_enemy_damage():
+    global health
+
+    health -= basic_enemy_power
+
+async def collisions(screen, player_pos, basic_enemy_pos, fast_enemy_pos, width, height):
+    player = pygame.Rect(player_pos.x, player_pos.y, width, height)
+    basic_enemy = pygame.Rect(basic_enemy_pos.x, basic_enemy_pos.y, width, height)
+
+    collide = player.colliderect(basic_enemy)
+
+    if collide:
+        await basic_enemy_damage()
