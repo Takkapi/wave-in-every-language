@@ -2,7 +2,9 @@ import pygame
 import asyncio
 
 from player import player
-from enemies import basic_enemy, fast_enemy
+from enemies import *
+
+from game_manager import *
 
 import window
 import entity
@@ -37,7 +39,18 @@ async def main():
 <<<<<<< Updated upstream
         screen.fill("black")
 
+        await draw_score(screen)
+        await draw_wave(screen)
+        await draw_health(screen)
+
+        await collisions(screen, player_pos, basic_enemy_pos, fast_enemy_pos, width, height)
+
+        await waves_fun(screen, basic_enemy_pos, fast_enemy_pos ,width, height, dt)
+        
+        await inc_waves()
+        
         await player(screen, player_pos, width, height, dt)
+<<<<<<< HEAD
         await basic_enemy(screen, basic_enemy_pos, width, height, dt)
         await fast_enemy(screen, fast_enemy_pos, width, height, dt)
 =======
@@ -45,6 +58,11 @@ async def main():
         
         # await player(screen, player_pos, width, height, dt)
         
+=======
+
+        # await basic_enemy(screen, basic_enemy_pos, width, height, dt)
+        # await fast_enemy(screen, fast_enemy_pos, width, height, dt)
+>>>>>>> 203798daab1c310a0ce8ffeb2fa306807136a7c4
 
         # await basic_enemy(screen, basic_enemy_pos, width, height, dt)
         # await fast_enemy(screen, fast_enemy_pos, width, height, dt)
@@ -56,4 +74,3 @@ async def main():
     # pygame.quit()
 
 asyncio.run(main())
-

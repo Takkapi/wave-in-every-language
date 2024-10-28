@@ -2,9 +2,14 @@ import pygame
 import numpy as np
 import asyncio
 
+health = 100
+
 async def player(screen, player_pos, width, height, dt):
-    speed = 500
-    pygame.draw.rect(screen, pygame.Color(255, 255, 255), pygame.Rect(player_pos.x, player_pos.y, 50, 50))
+    global health
+
+    speed = 700
+    if health > 0:
+        pygame.draw.rect(screen, pygame.Color(255, 255, 255), pygame.Rect(player_pos.x, player_pos.y, 50, 50))
 
     keys = pygame.key.get_pressed()
     if keys[pygame.K_w]:
@@ -18,3 +23,4 @@ async def player(screen, player_pos, width, height, dt):
 
     player_pos.x = np.clip(player_pos.x, 0, width - 51)
     player_pos.y = np.clip(player_pos.y, 0, height - 51)
+
